@@ -231,27 +231,4 @@ function rr_import_page_callback() {
 
 add_action( 'plugins_loaded', 'rr_export_init' );
 add_action( 'admin_menu', 'rr_export_register_pages' );
-###############################################################################
-/**
- *
- * EXAMPLE: using a single option key 'rikesh-test'
- *
-  function test_options_name( $val ) {
-  $val[] = array ( 'Plugin Name 1 - Description of the option' => 'rikesh-test' );
-  return $val;
-  }
 
-
-  # Using two option keys 'rikesh-test1' and 'rikesh-test2'
-  function test_options_name1( $val ) {
-  $val[] = array (
-  'Plugin Name 2 - Option which controls the lorem ipsum' => 'rikesh-test1',
-  'Plugin Name 2 - Option keeping lorem ipsum' => 'rikesh-test2'
-  );
-  return $val;
-  }
-
-  # Filter examples
-  add_filter( 'rr_export_options', 'test_options_name1' );
-  add_filter( 'rr_export_options', 'test_options_name' );
- */
